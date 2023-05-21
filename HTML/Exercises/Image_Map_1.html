@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Map</title>
+  </head>
+  <body>
+    <img
+      src="../Sources/Image_1.jpg"
+      alt="Clickable Image"
+      usemap="#workmap"
+      width="400px"
+      height="400px"
+    />
+
+    <map name="workmap">
+      <area
+        shape="poly"
+        coords="207,100,150,251,130,255,0,230,0,185,55,55"
+        alt="Computer"
+        target="_blank"
+        href="https://en.wikipedia.org/wiki/Book"
+      />
+
+      <area
+        shape="circle"
+        coords="155,320,55"
+        alt="Computer"
+        target="_blank"
+        href="https://en.wikipedia.org/wiki/Coffee"
+      />
+
+      <area
+        shape="circle"
+        coords="315,30,55"
+        alt="Computer"
+        target="_blank"
+        href="https://en.wikipedia.org/wiki/Coffee"
+      />
+    </map>
+
+    <h1>You can click the BOOK or coffees</h1>
+  </body>
+</html>
