@@ -1,0 +1,35 @@
+/* Fişek aralık kaydırıcısı */
+.ui-slider {
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 1.2em;
+    height: 1.2em;
+    cursor: default;
+    margin: -0.6em 0 0 -0.6em;
+    text-align: center;
+    line-height: 1.2em;
+    border: 1px solid #FFF;
+    background-color: #FFB000;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #CCC;
+    outline: none;
+  }
+  .ui-slider-horizontal {
+    height: 0.8em;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+  }
+  .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    background-color: #FFB000;
+  }
+
+  
