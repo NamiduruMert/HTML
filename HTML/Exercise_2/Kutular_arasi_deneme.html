@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+
+          <style>
+               * {
+                    box-sizing: border-box;
+               }
+               body {
+                    margin: 0px;
+               }
+               .clearfix::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+               }
+               div.border {
+                    background-color: aqua;
+                    width: 400px;
+                    height: 550px;
+                    float: left;
+                    border: 2px solid gray;
+                    margin: 10px;
+               }
+               div.ust {
+                    width: 1800px;
+               }
+               .icerdeki_1 {
+                    width: 200px;
+                    height: 100px;
+                    background-color: rgb(37, 93, 93);
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+               }
+               .icerdeki_2 {
+                    width: 200px;
+                    height: 100px;
+                    background-color: rgb(37, 50, 50);
+                    position: absolute;
+                    top: 277px;
+                    left: 538px;
+               }
+               .icerdeki_3 {
+                    width: 200px;
+                    height: 100px;
+                    background-color: rgb(1, 24, 24);
+                    position: relative;
+               }
+          </style>
+     </head>
+     <body>
+          <div class="clearfix ust">
+               <div class="box1 border">
+                    <h1 style="float: left">
+                         Transform(translate) sayesinde kutunun tam orasından
+                         hareket ettirebiliyoruz.RELATİVE
+                    </h1>
+                    <div class="icerdeki_1"></div>
+               </div>
+               <div class="box2 border">
+                    <h1 style="float: left">
+                         Transform(translate) sayesinde kutunun tam orasından
+                         hareket ettirebiliyoruz.ABSOLUTE
+                    </h1>
+                    <div class="icerdeki_2"></div>
+               </div>
+               <div class="box3 border"><div class="icerdeki_3"></div></div>
+          </div>
+     </body>
+</html>

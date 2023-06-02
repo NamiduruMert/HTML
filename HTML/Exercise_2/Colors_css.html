@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+          <style>
+               div {
+                    border: 2px solid gray;
+                    height: 150px;
+                    margin: 15px;
+               }
+
+               #box1 {
+                    background-color: rgb(255, 0, 0);
+                    transition-duration: 0.5s;
+               }
+
+               #box1:hover {
+                    background-color: rgb(255, 0, 0);
+                    opacity: 0.2;
+               }
+
+               #box2 {
+                    background-color: #00ff00;
+               }
+               #box3 {
+                    background-color: hsl(240, 100%, 50%);
+               }
+               #box4 {
+                    background-color: rgba(255, 99, 71, 0.5);
+                    transition-duration: 2s;
+               }
+               #box4:hover {
+                    background-color: rgba(255, 99, 71, 1);
+               }
+          </style>
+     </head>
+     <body>
+          <div id="box1">
+               <span
+                    ><h1>
+                         Burada RGB yani (255, 0, 0) değerleri kullanılmıştır (
+                    </h1></span
+               >
+          </div>
+          <div id="box2">
+               <span
+                    ><h1>
+                         Burada Hex değeri yani #00ff00 değerleri kullanılmıştır
+                    </h1></span
+               >
+          </div>
+          <div id="box3">
+               <span
+                    ><h1>
+                         Burada hsl(hue(240), saturation(%40), lightness(%50))
+                         değerleri kullanılmıştır
+                    </h1></span
+               >
+          </div>
+          <div id="box4">
+               <span
+                    ><h1>
+                         RGBa(alfa) kullanılmıştır.4.üncü değer opacitesini
+                         verir.(255, 255, 255, 0.4)
+                    </h1></span
+               >
+          </div>
+     </body>
+</html>

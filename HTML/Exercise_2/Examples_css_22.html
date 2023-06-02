@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+          <style>
+               * {
+                    box-sizing: border-box;
+               }
+               .clearfix::after {
+                    content: "";
+                    clear: both;
+                    display: block;
+               }
+               header,
+               footer {
+                    color: #ffbd35;
+                    background-color: #8267be;
+                    padding: 15px;
+                    margin-top: 10px;
+               }
+
+               footer#aydi {
+                    margin-top: 25px;
+               }
+               .listeler {
+                    background-color: rgb(255, 255, 255);
+                    height: 150px;
+                    width: 25%;
+                    float: left;
+               }
+               .icerik {
+                    background-color: rgb(255, 255, 255);
+                    height: 150px;
+                    width: 75%;
+                    float: left;
+                    padding-left: 10px;
+               }
+               li {
+                    list-style: none;
+                    background-color: #502064;
+                    margin-bottom: 10px;
+                    color: #fff;
+                    padding-left: 0px;
+                    padding: 8px 16px;
+               }
+               li:hover {
+                    cursor: pointer;
+                    background-color: #f1f7b5;
+                    color: red;
+               }
+               ul {
+                    padding-left: 0px;
+               }
+               .buyuk_yazi {
+                    font-size: 30px;
+               }
+          </style>
+     </head>
+     <body>
+          <header>
+               <h1>Header</h1>
+          </header>
+
+          <section class="clearfix">
+               <div class="listeler">
+                    <ul>
+                         <li>HTML</li>
+                         <li>CSS</li>
+                         <li>Javascript</li>
+                    </ul>
+               </div>
+
+               <div class="icerik">
+                    <h1 class="buyuk_yazi">Yazılım Kursuna Selamlarını İlet</h1>
+                    <p>
+                         Lorem ipsum dolor sit amet consectetur adipisicing
+                         elit. Quisquam impedit dolorum suscipit rerum velit,
+                         incidunt tempore odio provident atque itaque quia nobis
+                         laboriosam eos hic officiis, cupiditate beatae delectus
+                         dolorem!
+                    </p>
+                    <p>
+                         Lorem ipsum dolor sit amet consectetur, adipisicing
+                         elit. Voluptatum, optio numquam? Ipsa totam enim optio
+                         veritatis officiis rem iusto nesciunt error, quisquam
+                         mollitia ratione. Soluta, necessitatibus? Totam eaque
+                         aliquid quae?
+                    </p>
+               </div>
+          </section>
+
+          <footer id="aydi">
+               <h1>Footer</h1>
+          </footer>
+     </body>
+</html>

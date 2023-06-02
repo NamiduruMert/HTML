@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+
+          <style>
+               * {
+                    box-sizing: border-box;
+               }
+               body {
+                    margin: 0px;
+               }
+               div {
+                    border: 5px solid gray;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+               }
+               .box1 {
+                    background-color: antiquewhite;
+               }
+               .box2 {
+                    background-color: rgb(216, 179, 130);
+                    position: relative;
+               }
+               #box3 {
+                    background-color: rgb(101, 97, 91);
+                    position: absolute;
+                    width: 100%;
+               }
+               .box4 {
+                    background-color: rgb(21, 13, 2);
+                    color: aliceblue;
+                    position: relative;
+                    top: 150px;
+                    width: 150px;
+                    height: 250px;
+                    left: 450px;
+               }
+               #container {
+                    position: relative;
+               }
+          </style>
+     </head>
+     <body>
+          <div class="box1">Header</div>
+          <div class="box2">Section</div>
+
+          <div id="box3">
+               Footer (Burasi absolute ve relativeye sahip bir container'in
+               icerisinde yer aldıgı icin verilecek degelerler relative degerine
+               sahip olan üst container pozisyonuna göre yapılmaktadır
+          </div>
+     </body>
+</html>

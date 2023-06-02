@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="tr">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Anasayfa | Filmler, diziler, her şey | MernamiApp</title>
+          <link rel="icon" href="../../../Bazı_resimler/home.png" />
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Lato&family=Sevillana&display=swap"
+               rel="stylesheet"
+          />
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+               integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+               crossorigin="anonymous"
+               referrerpolicy="no-referrer"
+          />
+          <link
+               rel="stylesheet"
+               href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+          />
+
+          <style>
+               .material-symbols-outlined {
+                    font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0,
+                         "opsz" 40;
+               }
+
+               .login_1 {
+                    border: 2px solid white;
+                    border-radius: 8px;
+
+                    background-color: rgb(46, 76, 109);
+                    font-family: sans-serif;
+               }
+               body {
+                    box-sizing: border-box;
+                    font-family: "Lato", sans-serif;
+               }
+
+               * {
+                    box-sizing: border-box;
+                    margin: 0px;
+               }
+               li {
+                    font-family: sans-serif;
+                    color: #fff;
+                    list-style: none;
+                    display: inline-block;
+               }
+               a.noktaliler::before {
+                    content: "\2022";
+
+                    color: rgb(255, 255, 255);
+               }
+               a.none_dot::before {
+                    content: none;
+               }
+               ul {
+                    text-align: right;
+                    width: calc(100% - 242px);
+               }
+               a {
+                    font-family: sans-serif;
+                    color: #fff;
+                    text-decoration: none;
+               }
+               a.guzelyazi {
+                    font-family: "Lato", sans-serif;
+               }
+
+               .ortabolum {
+                    width: 100%;
+                    height: 500px;
+                    background-image: url(../../../Bazı_resimler/home-bg.jpeg);
+                    background-position: center;
+               }
+
+               h1.ortayazi {
+                    padding: 30px 8px;
+                    position: relative;
+               }
+               nav h1 {
+                    text-align: center;
+                    font-size: 30px;
+                    padding: 10px;
+               }
+               nav p {
+                    text-align: center;
+                    padding: 10px;
+               }
+
+               .ufak_metinler {
+                    text-align: center;
+               }
+               nav h2 {
+                    text-align: center;
+
+                    padding: 10px;
+               }
+               #ufak_yerler {
+                    width: 30%;
+               }
+               nav div.uclu {
+                    padding: 10px;
+                    display: inline-block;
+                    width: 30%;
+               }
+               #logo_boyut {
+                    color: #fc997c;
+                    font-size: 50px;
+               }
+               .div_resim {
+                    background-color: rgb(160, 104, 104);
+                    height: 350px;
+                    width: calc(50% - 2px);
+                    display: inline-block;
+                    vertical-align: top;
+                    background-image: url(../../../Bazı_resimler/features.jpeg);
+                    background-position: top;
+                    background-size: cover;
+               }
+               .div_yazi {
+                    background-color: #edf5f7;
+                    height: 350px;
+                    width: calc(50% - 2px);
+                    display: inline-block;
+               }
+
+               li.basilan:hover {
+                    background-color: rgb(255, 255, 255);
+
+                    border: 2px solid rgb(46, 76, 109);
+               }
+
+               a.basilan:hover {
+                    color: rgb(46, 76, 109);
+               }
+
+               footer a:hover {
+                    color: #fc997c;
+                    background-color: #fff;
+                    border: 2px solid #fc997c;
+               }
+               .son_kısım {
+                    color: #ffffff;
+                    background-color: #fc997c;
+                    content: none;
+                    border: 2px solid white;
+                    padding: 8px 16px;
+                    border-radius: 10px;
+               }
+
+               p.klas1 {
+                    background-color: asd1;
+               }
+
+               a.activa:active {
+                    background-color: crimson;
+                    color: #edf5f7;
+               }
+
+               .footerson {
+                    background-color: #edf5f7;
+                    width: 33%;
+                    height: 250px;
+                    text-align: center;
+                    float: left;
+               }
+
+               .clearfix::after {
+                    clear: both;
+                    display: block;
+                    content: "";
+               }
+
+               .footer_son_li {
+                    color: black;
+                    list-style: disc;
+               }
+               #liste_var {
+                    list-style: disc;
+               }
+
+               .kaydirmali_1 {
+                    position: relative;
+               }
+
+               .kaydirmali_2 {
+                    position: relative;
+               }
+
+               .kaydirmali_3 {
+                    position: relative;
+               }
+          </style>
+     </head>
+     <body>
+          <header style="box-sizing: border-box">
+               <nav style="background-color: #fc997c; box-sizing: border-box">
+                    <div
+                         style="
+                              display: inline-block;
+                              font-weight: bold;
+                              font-size: 21px;
+                              padding: 8px 16px;
+                         "
+                    >
+                         <a class="none_dot guzelyazi" href="">MernamiApp</a>
+                    </div>
+                    <ul style="display: inline-block; padding-right: 45px">
+                         <li style="padding-right: 20px">
+                              <a class="noktaliler" href="">Filmler</a>
+                         </li>
+                         <li class="noktaliler" style="margin-right: 20px">
+                              <a class="noktaliler" href="">Diziler</a>
+                         </li>
+                         <li class="login_1 basilan">
+                              <a
+                                   class="activa"
+                                   style="padding: 8px 16px"
+                                   class="none_dot basilan"
+                                   href=""
+                                   >Login</a
+                              >
+                         </li>
+                    </ul>
+               </nav>
+          </header>
+          <section>
+               <main
+                    class="ortabolum"
+                    style="background-color: rgb(255, 255, 255)"
+               >
+                    <h1 class="ortayazi">Welcome To Mernami World</h1>
+               </main>
+               <nav>
+                    <h1>Nasıl Çalışıyor</h1>
+                    <p>
+                         Yeni sayılardan haberdar olun! How It Works dergisi ve
+                         bilim özel sayılarımızla ilgili yenilikleri size
+                         e-postayla ulaştırmamızı ister misiniz? Bültenimize
+                         abone olun.
+                    </p>
+               </nav>
+               <nav style="text-align: center">
+                    <div class="uclu">
+                         <span id="logo_boyut">
+                              <i class="fa-solid fa-user"></i
+                         ></span>
+                         <h2>Üyelik</h2>
+
+                         <p class="ufak_metinler">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Nam dolor repellendus minus
+                              doloribus tenetur accusamus?
+                         </p>
+                    </div>
+                    <div class="uclu">
+                         <span id="logo_boyut">
+                              <i class="fa-regular fa-face-sad-cry"></i
+                         ></span>
+                         <h2>Bir Dene Plan</h2>
+                         <p>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Nam dolor repellendus minus
+                              doloribus tenetur accusamus?
+                         </p>
+                    </div>
+
+                    <div class="uclu">
+                         <span id="logo_boyut">
+                              <i class="fa-solid fa-mosque"></i
+                         ></span>
+                         <h2>Selamın Aleyküm</h2>
+                         <p>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipisicing elit. Nam dolor repellendus minus
+                              doloribus tenetur accusamus?
+                         </p>
+                    </div>
+               </nav>
+          </section>
+          <footer style="text-align: center; box-sizing: border-box">
+               <div class="div_resim"></div>
+               <div class="div_yazi">
+                    <h1
+                         style="padding: 40px; vertical-align: top"
+                         class="alt_yazi"
+                    >
+                         Welcome To My Heaven
+                    </h1>
+                    <p style="padding: 40px">
+                         Lorem ipsum dolor sit amet consectetur adipisicing
+                         elit. Maxime, mollitia!Lorem ipsum, dolor sit amet
+                         consectetur adipisicing elit. Itaque velit voluptatem
+                         placeat maxime aperiam alias praesentium tenetur sunt
+                         cupiditate dicta?Lorem, ipsum dolor sit amet
+                         consectetur adipisicing elit. At, eligendi.
+                    </p>
+
+                    <a class="son_kısım" href="">View features</a>
+               </div>
+          </footer>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+          <footer class="clearfix">
+               <div>
+                    <div class="footerson kaydirmali_1">
+                         <h1 class="footer_son_yazi">Free</h1>
+                         <h2 class="footer_son_yazi_h2">0 / Months</h2>
+                         <ul>
+                              <li class="footer_son_li">HD available</li>
+                              <li class="footer_son_li">
+                                   Unlimited Movies and TV shows
+                              </li>
+                              <li class="footer_son_li">
+                                   Watch on your phone & tablet
+                              </li>
+                              <li class="footer_son_li">
+                                   Download and watch offline
+                              </li>
+                              <li class="footer_son_li">
+                                   Screens you can watch
+                              </li>
+                              <li class="footer_son_li">First Month Free</li>
+                         </ul>
+                         <button class="button_class">Choose A Plan</button>
+                    </div>
+                    <div class="footerson kaydirmali_2">
+                         <div class="footerson">
+                              <h1 class="footer_son_yazi">Basic</h1>
+                              <h2 class="footer_son_yazi_h2">$19.99/month</h2>
+                              <ul>
+                                   <li class="footer_son_li">HD available</li>
+                                   <li class="footer_son_li">
+                                        Unlimited Movies and TV shows
+                                   </li>
+                                   <li class="footer_son_li">
+                                        Watch on your phone & tablet
+                                   </li>
+                                   <li class="footer_son_li">
+                                        Download and watch offline
+                                   </li>
+                                   <li class="footer_son_li">
+                                        Screens you can watch
+                                   </li>
+                                   <li class="footer_son_li">
+                                        First Month Free
+                                   </li>
+                              </ul>
+                              <button class="button_class">
+                                   Choose A Plan
+                              </button>
+                         </div>
+                    </div>
+                    <div class="footerson kaydirmali_3">
+                         <div class="footerson">
+                              <h1 class="footer_son_yazi">Premium</h1>
+                              <h2 class="footer_son_yazi_h2">$19.99/month</h2>
+                              <ul>
+                                   <li class="footer_son_li">HD available</li>
+                                   <li class="footer_son_li">
+                                        Unlimited Movies and TV shows
+                                   </li>
+                                   <li class="footer_son_li">
+                                        Watch on your phone & tablet
+                                   </li>
+                                   <li class="footer_son_li">
+                                        Download and watch offline
+                                   </li>
+                                   <li class="footer_son_li">
+                                        Screens you can watch
+                                   </li>
+                                   <li class="footer_son_li" id="liste_var">
+                                        First Month Free
+                                   </li>
+                              </ul>
+                              <button class="button_class">
+                                   Choose A Plan
+                              </button>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+     </body>
+</html>
+
+<!-- <div class="box1">
+     <h1>Premium</h1>
+     <h2>$19.99/month</h2>
+     <li>HD available</li>
+     <li>Unlimited Movies and TV shows</li>
+     <li>Watch on your phone & tablet</li>
+     <li>Download and watch offline</li>
+     <li>Screens you can watch</li>
+     <li>First Month Free</li>
+     <button class="button_class">Choose A Plan</button>
+</div> -->

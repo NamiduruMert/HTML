@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+
+          <style>
+               .clearfix::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+               }
+
+               .container {
+                    clear: both;
+                    content: "";
+                    display: block;
+               }
+
+               .box {
+                    width: 150px;
+                    height: 150px;
+                    background-color: rgb(76, 159, 159);
+                    float: right;
+               }
+          </style>
+     </head>
+     <body>
+          <div class="containe clearfix">
+               <div style="float: left" class="box"></div>
+               <div class="box"></div>
+               <div class="box"></div>
+               <!-- <div style="clear: both"></div> -->
+          </div>
+          <p style="text-align: center">
+               BURDAKİ YAZI FLOAT CLEAR ATMAZ İSEN İÇERİDE GÖZÜKMEKTEDİR.
+          </p>
+          <p style="color: brown">
+               <b>
+                    Ya konteynir içerisinde BLOCK olan bir element koyup
+                    style'dan clear:right-left-both dersin.Ya da class acip
+                    .clas_ismi::after {clear:both; display:block; content:"";
+                    dersin
+               </b>
+          </p>
+     </body>
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap"
+               rel="stylesheet"
+          />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap"
+               rel="stylesheet"
+          />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap"
+               rel="stylesheet"
+          />
+          <link
+               rel="stylesheet"
+               href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+          />
+          <link
+               rel="stylesheet"
+               href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+          />
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap"
+               rel="stylesheet"
+          />
+          <link
+               rel="stylesheet"
+               href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+          />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Sevillana&display=swap"
+               rel="stylesheet"
+          />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+          <style>
+               html {
+  scroll-behavior: smooth;
+}
+               * {
+                    box-sizing: border-box;
+               }
+
+               body {
+                    margin: 0px;
+                    height: 2000px;
+               }
+
+               .clearfix::after {
+                    display: block;
+                    clear: both;
+                    content: "";
+               }
+
+               header nav {
+                    background-color: #fc997c;
+                    width: 100%;
+                    height: 50px;
+               }
+               .header_a1 {
+                    text-decoration: none;
+                    margin: 5px 20px;
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 28px;
+                    font-weight: bold;
+                    font-family: "Sevillana", cursive;
+               }
+               .nav_liste_elementleri_noktasiz {
+                    color: #fff;
+                    display: inline-block;
+                    margin-right: 20px;
+               }
+
+               .nav_liste_elementleri_noktali {
+                    display: inline-block;
+               }
+               .header_a2 {
+                    content: "\2022";
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 16px;
+                    margin-right: 15px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+               }
+               .header_a3 {
+                    content: "\2022";
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 16px;
+                    margin-right: 25px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+               }
+
+               .header_a2::before {
+                    content: "\2022";
+                    color: #fff;
+               }
+               .header_a3::before {
+                    content: "\2022";
+                    color: #fff;
+               }
+               .header_a4 {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    background-color: #2e4c6d;
+                    padding: 5px 12px;
+                    border-radius: 5px;
+                    border: 2px solid #fff;
+                    transition: 1s;
+               }
+               .header_a4:hover {
+                    text-decoration: none;
+                    color: #2e4c6d;
+                    font-size: 16px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    background-color: #fff;
+                    padding: 5px 12px;
+                    border-radius: 5px;
+                    border: 2px solid #2e4c6d;
+               }
+
+               .nav_ul {
+                    text-align: right;
+                    width: calc(100% - 233px);
+                    display: inline-block;
+                    margin: 0px;
+               }
+
+               .Orta_bolum {
+                    background-image: url(../../../Bazı_resimler/show_case_resim_1.jpg);
+                    width: 100%;
+                    height: 600px;
+                    background-size: cover;
+                    background-position: center center;
+               }
+
+               .Orta_bolum_yazi {
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 50px;
+                    color: rgb(255, 255, 255);
+                    display: inline-block;
+                    transition: 1s;
+                    font-family: "Love Light", cursive;
+               }
+               .Orta_bolum_yazi:hover {
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 45px;
+                    color: rgb(150, 192, 194);
+                    display: inline-block;
+                    font-family: "Love Light", cursive;
+               }
+               .adimlar {
+                    text-align: center;
+                    margin-top: -7px;
+                    color: #3e4555;
+                    font-size: 30px;
+                    margin-top: -10px;
+               }
+               .bilgilendirme {
+                    font-weight: bold;
+               }
+               .orta_alt_bolum {
+                    list-style: none;
+                    display: inline-block;
+                    text-align: center;
+                    background-color: rgb(255, 255, 255);
+                    border: 1px solid rgb(255, 255, 255);
+                    width: 32%;
+                    height: 250px;
+                    margin-top: 15px;
+               }
+               .orta_alt_yazi_baslik {
+                    font-size: 35px;
+               }
+
+               div.main_resim {
+                    height: 350px;
+                    background-color: aliceblue;
+                    width: 50%;
+                    background-image: url(../../../Bazı_resimler/town-6924142.jpg);
+                    background-size: cover;
+                    background-position: center center;
+                    float: left;
+               }
+               div.main_yazi {
+                    background-color: #edf5f7;
+                    height: 350px;
+                    float: left;
+                    width: 50%;
+               }
+               .main_h1 {
+                    font-family: "Sevillana", cursive;
+                    font-size: 40px;
+                    text-align: center;
+                    position: static;
+               }
+               .main_p {
+                    margin: 25px 40px;
+                    padding: 15px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #292d35;
+               }
+               .main_a {
+                    display: block;
+                    text-decoration: none;
+                    background-color: #2e4c6d;
+                    color: #fff;
+                    padding: 10px;
+                    font-size: 20px;
+                    float: left;
+                    border-radius: 8px;
+                    position: relative;
+                    top: 25px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border: 3px solid #2e4c6d;
+                    transition: 0.9s;
+               }
+
+               .main_a:hover {
+                    display: block;
+                    text-decoration: none;
+                    background-color: #fff;
+                    color: #2e4c6d;
+                    padding: 10px;
+                    font-size: 20px;
+                    float: left;
+                    border-radius: 8px;
+                    transform: translate(-50%, -50%);
+                    border: 3px solid #2e4c6d;
+                    position: relative;
+                    top: 25px;
+                    left: 50%;
+               }
+
+               .footer_h1 {
+                    color: #3e4555;
+               }
+               .footer_div {
+                    background-color: #edf5f7;
+                    height: 290px;
+                    width: 29%;
+                    display: inline-block;
+                    margin-right: 35px;
+                    vertical-align: top;
+                    border-radius: 15px;
+                    transition: 0.8s;
+               }
+
+               .footer_div:hover {
+                    box-shadow: -5px 10px 52px 8px red;
+               }
+
+               .footer_div_digerleri:hover {
+                    box-shadow: -5px 10px 22px 3px rgb(28, 20, 20) !important ;
+               }
+               .footer_plan_ul {
+                    list-style: none;
+                    text-align: center;
+                    padding: 0px;
+               }
+               .footer_h2 {
+                    text-align: center;
+               }
+
+               footer {
+                    margin-top: 65px;
+                    text-align: center;
+               }
+
+               .ortali_div {
+                    width: 1000px;
+                    text-align: center;
+                    background-color: #ffffff;
+                    display: inline-block;
+               }
+               .ikinci_div {
+                    height: 355px !important ;
+                    background-color: #396eb0 !important;
+                    color: #fff;
+               }
+               .h2_ikinci_kutu {
+                    background-color: #edf5f7;
+                    margin-left: 55px;
+                    margin-right: 55px;
+                    border-radius: 8px;
+                    color: #fc997c;
+                    padding: 8px 12px;
+               }
+               .Box_inside_1 {
+
+
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    border: 2px solid #fc997c;
+                    padding: 4px 10px;
+                    background-color: #fc997c ;
+                    border-radius: 22px;
+                    transition: .6s;
+
+
+               }
+               .Box_inside_1:hover {
+
+
+                    text-decoration: none;
+                    color: #fc997c;
+                    border: 2px solid #fc997c;
+                    padding: 4px 10px;
+                    background-color: #ffffff ;
+                    border-radius: 22px;
+
+
+               }
+
+               .Box_inside_2 {
+
+
+               text-decoration: none;
+               color: rgb(255, 255, 255);
+               border: 2px solid #fc997c;
+               padding: 4px 10px;
+               background-color: #fc997c ;
+               border-radius: 22px;
+               transition: .6s;
+
+
+               }
+               .Box_inside_2:hover {
+
+
+               text-decoration: none;
+               color: #fc997c;
+               border: 2px solid #fc997c;
+               padding: 4px 10px;
+               background-color: #ffffff ;
+               border-radius: 22px;
+
+
+               }
+               .Box_inside_3 {
+
+
+               text-decoration: none;
+               color: rgb(255, 255, 255);
+               border: 2px solid #fc997c;
+               padding: 4px 10px;
+               background-color: #fc997c ;
+               border-radius: 22px;
+               transition: .6s;
+
+
+               }
+               .Box_inside_3:hover {
+
+
+               text-decoration: none;
+               color: #fc997c;
+               border: 2px solid #fc997c;
+               padding: 4px 10px;
+               background-color: #ffffff ;
+               border-radius: 22px;
+
+
+               }
+               .son_etiket {
+                    
+                    display: inline-block;
+                    position: fixed;
+                    bottom: 10px;
+                    right: 10px;
+                    background-color: #fc997c;
+                    border-radius: 900px;
+                    transition: .8s;
+
+               }
+
+
+               .son_etiket:hover {
+
+
+                    background-color: #D670E5;
+
+               }
+
+               .header_bagli {
+
+
+                    position: fixed;
+                    top: 0px;
+                    width: 100%;
+
+               }
+                    
+          </style>
+     </head>
+     <body>
+          <header id="basa_don" class="clearfix header_bagli">
+               <nav>
+                    <a class="header_a1" href=""
+                         >MernamiStyle
+                         <span
+                              style="
+                                   font-family: Impact, Haettenschweiler,
+                                        'Arial Narrow Bold', sans-serif;
+                              "
+                              >&trade;</span
+                         ></a
+                    >
+
+                    <ul class="nav_ul">
+                         <li class="nav_liste_elementleri_noktali">
+                              <a class="header_a2" href="">Myself</a>
+                         </li>
+                         <li class="nav_liste_elementleri_noktali">
+                              <a class="header_a3" href="">Indie</a>
+                         </li>
+                         <li class="nav_liste_elementleri_noktasiz">
+                              <a class="header_a4" href="">Login</a>
+                         </li>
+                    </ul>
+               </nav>
+          </header>
+
+          <section style="margin-top: 50px; " > 
+               <div class="Orta_bolum">
+                    <h1 class="Orta_bolum_yazi">Nereye Götürecek Seni</h1>
+               </div>
+               <div class="adimlar">
+                    <h1 class="bilgilendirme">Neler Bulacaksın</h1>
+                    <p
+                         style="
+                              font-family: 'Rubik Bubbles', cursive;
+                              font-size: 20px;
+                              margin-top: -20px;
+                         "
+                    >
+                         We will show you step by step how to start your
+                         favorite journey & trips!!!
+                    </p>
+               </div>
+               <div style="text-align: center; vertical-align: top">
+                    <ul>
+                         <li class="orta_alt_bolum">
+                              <span
+                                   style="font-size: 50px"
+                                   class="material-symbols-outlined"
+                              >
+                                   how_to_reg
+                              </span>
+                              <h1 class="orta_alt_yazi_baslik">Register</h1>
+                              <p>
+                                   Kayıt kelimesi Türkçe'de "1. bağlama, (mec.)
+                                   yazıya bağlama, 2. bağ, koşul, yazıya
+                                   bağlanmış belge" anlamına gelir.
+                              </p>
+                         </li>
+                         <li class="orta_alt_bolum">
+                              <span
+                                   style="font-size: 50px"
+                                   class="material-symbols-outlined"
+                              >
+                                   public
+                              </span>
+                              <h1 class="orta_alt_yazi_baslik">
+                                   Choose a Plan
+                              </h1>
+                              <p>
+                                   bir yapının, bir kentin, bir makinenin vb.
+                                   çeşitli bölümlerini gösteren ölçekli çizim.
+                                   2. Bir işin, bir yapıtın gerçekleştirilmesi,
+                              </p>
+                         </li>
+                         <li class="orta_alt_bolum">
+                              <span
+                                   style="font-size: 50px"
+                                   class="material-symbols-outlined"
+                              >
+                                   attractions
+                              </span>
+                              <h1 class="orta_alt_yazi_baslik">ENJOY!</h1>
+                              <p>
+                                   HALK AĞZINDAN giderken biraz durup oyalanmak,
+                                   durup beklemek. "Biraz eğlen de birlikte
+                                   gidelim"
+                              </p>
+                         </li>
+                    </ul>
+               </div>
+          </section>
+          <main class="clearfix">
+               <div class="main_resim"></div>
+               <div class="main_yazi">
+                    <h1 class="main_h1">
+                         Bir işimiz yoktu, gezmek, dolaşmak istemiştik
+                    </h1>
+                    <p class="main_p">
+                         Tarihte şehir için kullanılan adlar içinde İslambol,
+                         dar kullanım alanına sahip olsa da kayıtlarda görülen
+                         adlardandır. İstanbul isminin kökeninin İslam ve bol
+                         ekine dayandırılması halk etimolojisi örneklerinden
+                         biridir ve etimolojik açıdan doğru değildir.
+                    </p>
+                    <a class="main_a" href="">View Inside</a>
+               </div>
+          </main>
+          <footer style="position: relative" class="clearfix">
+               <h1 class="footer_h1" style="text-align: center">
+                    Become a Unordinary Player
+               </h1>
+               <div style="margin-top: 45px">
+                    <div class="clearfix ortali_div">
+                         <div class="footer_div soldan_yeme birinci_div footer_div_digerleri">
+                              <h2 class="footer_h2">Free</h2>
+                              <h2 class="footer_h2">0/month</h2>
+                              <ul class="footer_plan_ul">
+                                   <li class="footer_li">HD available</li>
+                                   <li>Unlimited Movies and TV shows</li>
+                                   <li>Watch on your phone & tablet</li>
+                                   <li>Download and watch offline</li>
+                                   <li>Screens you can watch</li>
+                                   <li>First Month Free</li>
+                              </ul>
+                              <a class="Box_inside_1" href="">&#9762 Choose Plan</a>
+                         </div>
+                         <div class="footer_div ikinci_div">
+                              <h2 class="h2_ikinci_kutu">Recommended</h2>
+                              <h2 class="footer_h2">Basic</h2>
+                              <h2 class="footer_h2">$9.99/month</h2>
+                              <ul class="footer_plan_ul">
+                                   <li class="footer_li">HD available</li>
+                                   <li>Unlimited Movies and TV shows</li>
+                                   <li>Watch on your phone & tablet</li>
+                                   <li>Download and watch offline</li>
+                                   <li>Screens you can watch</li>
+                                   <li>First Month Free</li>
+                              </ul>
+                              <a class="Box_inside_1" href=""> &#9757 Choose Plan</a>
+                         </div>
+                         <div class="footer_div ucuncu_div footer_div_digerleri">
+                              <h2 class="footer_h2">Premium</h2>
+                              <h2 class="footer_h2">$19.99/month</h2>
+                              <ul class="footer_plan_ul">
+                                   <li class="footer_li">HD available</li>
+                                   <li>Unlimited Movies and TV shows</li>
+                                   <li>Watch on your phone & tablet</li>
+                                   <li>Download and watch offline</li>
+                                   <li>Screens you can watch</li>
+                                   <li>First Month Free</li>
+                              </ul>
+                              <a class="Box_inside_1" href="">&#9762 Choose Plan</a>
+                         </div>
+                    </div>
+               </div>
+
+               
+          </footer>
+
+          <a class="son_etiket gelmeli" href="#basa_don"><span style=" font-size: 50px; font-weight: bold; color: #fff; " class="material-symbols-outlined">
+               expand_less
+               </span></a>
+     </body>
+</html>
