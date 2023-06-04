@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+
+          <style>
+               body {
+                    background-color: aquamarine;
+               }
+               h1 {
+                    display: none;
+                    text-align: center;
+               }
+               h2 {
+                    display: none;
+                    text-align: center;
+               }
+
+               /* iPhone SE */
+
+               @media (max-width: 375px) and (min-width: 0px) {
+                    body {
+                         background-color: red;
+                    }
+
+                    #iphonese h1 {
+                         display: block;
+                    }
+               }
+               /* iPhone XR */
+
+               @media (max-width: 414px) and (min-width: 376px) {
+                    body {
+                         background-color: orange;
+                    }
+
+                    #iphoneXR h1 {
+                         display: block;
+                    }
+               }
+               /* iPad AIR */
+
+               @media (max-width: 820px) and (min-width: 767px) {
+                    body {
+                         background-color: yellow;
+                    }
+
+                    #ipadAIR h1 {
+                         display: block;
+                    }
+               }
+               /* iPad MINI */
+
+               @media (max-width: 768px) and (min-width: 415px) {
+                    body {
+                         background-color: green;
+                    }
+
+                    #ipadmini h1 {
+                         display: block;
+                    }
+               }
+               /* Nest HUB */
+
+               @media (max-width: 1080px) and (min-width: 821px) {
+                    body {
+                         background-color: blue;
+                    }
+
+                    #nesthub h1 {
+                         display: block;
+                    }
+               }
+               /* Nest HUB max. */
+
+               @media (min-width: 1081px) {
+                    body {
+                         background-color: purple;
+                    }
+
+                    #nesthubmax h1 {
+                         display: block;
+                    }
+
+                    h2#nesthubmax2 {
+                         display: block;
+                    }
+               }
+          </style>
+     </head>
+     <body>
+          <div id="iphonese"><h1>Iphone SE</h1></div>
+          <div id="iphoneXR"><h1>I phone XR</h1></div>
+          <div id="ipadAIR"><h1>Ipad AIR</h1></div>
+          <div id="ipadmini"><h1>Ipad MINI</h1></div>
+          <div id="nesthub"><h1>Nest Hub</h1></div>
+          <div id="nesthubmax"><h1>Nest Hub Max.</h1></div>
+          <h2 id="nesthubmax2">
+               Ölçeklere göre cihazları öğrenebilmek için sekmeyi küçültün
+          </h2>
+     </body>
+</html>

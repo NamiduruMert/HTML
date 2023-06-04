@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+
+          <style>
+               .signup-form {
+                    width: 500px;
+                    margin: auto;
+               }
+
+               .signup-form label,
+               .signup-form input:not([type="checkbox"]),
+               .signup-form select {
+                    width: 100%;
+                    display: block;
+                    margin-top: 10px;
+               }
+
+               .signup-form input[type="checkbox"],
+               .signup-form input[type="checkbox"] + label {
+                    display: inline-block;
+                    width: auto;
+               }
+               .signup-form button[type="submit"] {
+                    display: block;
+                    margin-top: 20px;
+                    background-color: darkorange;
+                    color: #fff;
+                    padding: 8px 16px;
+                    border-radius: 100%;
+               }
+
+               .signup-form input:not([type="checkbox"]),
+               .signup-form select {
+                    border: 1px solid red;
+                    padding: 10px 15px;
+               }
+               .signup-form input:not([type="checkbox"]):focus,
+               .signup-form input:not([type="checkbox"]):focus {
+                    outline: none;
+                    background-color: rgb(70, 96, 87);
+                    border: 2px solid blue;
+                    color: #fff;
+               }
+               .signup-form input[type="checkbox"] {
+                    appearance: none;
+                    border: 2px solid red;
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: bottom;
+                    border-radius: 50%;
+               }
+
+               .signup-form input[type="checkbox"]:hover {
+                    background-color: gray;
+               }
+               .signup-form input[type="checkbox"]:checked {
+                    background-color: gray;
+               }
+               .signup-page {
+                    padding: 15px;
+               }
+          </style>
+     </head>
+
+     <body>
+          <h1 style="text-align: center; color: gray; font-size: 30px">
+               Lets Join US!!
+          </h1>
+
+          <form class="signup-form signup-page" action="">
+               <label for="firstname">Adınız</label>
+               <input type="text" id="firstname" placeholder="Your name" />
+               <label for="surname">Soyadınız</label>
+               <input type="text" id="surname" placeholder="Soyadınız" />
+
+               <label for="password">Şifreniz</label>
+               <input type="password" id="password" placeholder="Password" />
+               <label for="mail">mail</label>
+               <input type="mail" id="password" placeholder="mail" />
+               <label for="Gender">Cinsiyetiniz</label>
+               <select id="Gender">
+                    <option value="">Select</option>
+                    <option value="">Erkek</option>
+                    <option value="">Kadın</option>
+               </select>
+
+               <input type="checkbox" />
+               <label>Agree to <a href="">Terms & Conditions</a> </label>
+               <button type="submit">Sign Up</button>
+          </form>
+     </body>
+</html>

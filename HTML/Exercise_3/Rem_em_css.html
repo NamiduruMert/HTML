@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+
+          <style>
+               @media (min-width: 1001px) {
+                    div.birinci_deneme {
+                         background-color: var(--blue);
+                         height: 100vh;
+                    }
+               }
+
+               @media (min-width: 750px) and (max-width: 1000px) {
+                    #sanane1 {
+                         color: var(--white);
+                         display: block;
+                    }
+
+                    div.birinci_deneme {
+                         background-color: var(--gray);
+                         height: 100vh;
+                    }
+                    h1#sanane[class*="1"] {
+                         color: var(--white);
+                         font-size: 3em;
+                         text-align: center;
+                         display: block;
+                    }
+               }
+               @media (min-width: 500px) and (max-width: 749px) {
+                    #sanane1 {
+                         color: var(--white);
+                         display: block;
+                    }
+                    #sanane2 {
+                         color: var(--white);
+                         display: block;
+                    }
+
+                    div.birinci_deneme {
+                         background-color: var(--red);
+                         height: 100vh;
+                    }
+                    h1#sanane[class*="1"] {
+                         color: var(--white);
+                         font-size: 1em;
+                         text-align: center;
+                         display: block;
+                    }
+               }
+               @media (min-width: 250px) and (max-width: 499px) {
+                    #sanane1 {
+                         color: var(--white);
+                         display: block;
+                    }
+                    #sanane2 {
+                         color: var(--white);
+                         display: block;
+                    }
+                    #sanane3 {
+                         color: var(--white);
+                         display: block;
+                    }
+
+                    div.birinci_deneme {
+                         background-color: var(--green);
+                         height: 100vh;
+                    }
+                    h1#sanane[class*="1"] {
+                         color: var(--white);
+                         font-size: 1em;
+                         text-align: center;
+                         display: block;
+                    }
+               }
+               @media (min-width: 1px) and (max-width: 249px) {
+                    #sanane1 {
+                         color: var(--white);
+                         display: block;
+                    }
+                    #sanane2 {
+                         color: var(--white);
+                         display: block;
+                    }
+                    #sanane3 {
+                         color: var(--white);
+                         display: block;
+                    }
+                    #sanane4 {
+                         color: var(--white);
+                         display: block;
+                    }
+                    #sanane5 {
+                         color: var(--white);
+                         display: block;
+                    }
+                    #sanane6 {
+                         color: var(--white);
+                         display: block;
+                    }
+
+                    div.birinci_deneme {
+                         background-color: var(--orange);
+                         height: 100vh;
+                    }
+                    h1#sanane[class*="1"] {
+                         color: var(--white);
+                         font-size: 2.2em;
+                         text-align: center;
+                         display: block;
+                    }
+               }
+
+               html {
+                    font-size: 20px;
+               }
+               body {
+                    font-size: 10px;
+               }
+               * {
+                    margin: 0px;
+                    box-sizing: border-box;
+               }
+
+               .clearfix {
+                    display: block;
+                    clear: both;
+                    content: "";
+               }
+
+               :root {
+                    --gray: #999966;
+                    --blue: #6699ff;
+                    --red: #990000;
+                    --green: #73e600;
+                    --orange: #ff9933;
+                    --deneme: #000000;
+                    --yellow: #cccc00;
+                    --purple: #660033;
+                    --white: #ffcccc;
+               }
+
+               h1[class*="sa"]:not(:first-child) {
+                    color: var(--white);
+                    font-size: 2rem;
+                    text-align: center;
+                    display: none;
+               }
+
+               h1[class*="1"] {
+                    color: var(--white);
+                    font-size: 2rem;
+                    text-align: center;
+                    display: block;
+               }
+          </style>
+     </head>
+     <body>
+          <div class="birinci_deneme">
+               <h1 id="sanane" class="birinci_deneme_1_sa">
+                    Buranın içerisi ile oynayacağız.Tarayıcıyı
+                    küçültebilrisin...
+               </h1>
+               <h1 target="sll6" id="sanane1" class="birinci_deneme_2_sa">
+                    2.Yazı
+               </h1>
+               <h1 target="sll5" id="sanane2" class="birinci_deneme_3_sa">
+                    3.Yazı
+               </h1>
+               <h1 target="sll4" id="sanane3" class="birinci_deneme_4_sa">
+                    4.Yazı
+               </h1>
+               <h1 target="sll3" id="sanane4" class="birinci_deneme_5_sa">
+                    5.Yazı
+               </h1>
+               <h1 target="sll2" id="sanane5" class="birinci_deneme_6_sa">
+                    6.Yazı
+               </h1>
+          </div>
+     </body>
+</html>

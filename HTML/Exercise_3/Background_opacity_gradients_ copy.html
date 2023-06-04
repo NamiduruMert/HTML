@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               http-equiv="X-UA-Compatible"
+               content="IE=edge"
+          />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+          <style>
+               * {
+                    margin: 0px;
+               }
+               body {
+                    margin: 0px;
+               }
+               div.ilk_tabaka {
+                    background-image: linear-gradient(
+                              to bottom,
+                              rgba(
+                                   255,
+                                   255,
+                                   0,
+                                   0.4
+                              ),
+                              rgba(
+                                   255,
+                                   0,
+                                   0,
+                                   0.5
+                              )
+                         ),
+                         url(../../../Bazı_resimler/bg.jpg);
+
+                    width: 100vw;
+                    height: 100vh;
+                    background-position: center
+                         center;
+                    position: relative;
+                    opacity: 0.6;
+               }
+
+               div h1 {
+                    font-size: 80px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(
+                         -50%,
+                         -50%
+                    );
+                    color: red;
+                    opacity: 1 !important;
+               }
+               .gradientli {
+                    background-color: aquamarine;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    opacity: 0.2;
+               }
+               .logo {
+                    width: 80px;
+                    height: 80px;
+                    left: 70px;
+                    top: 70px;
+                    position: absolute;
+                    transform: translate(
+                         -50%,
+                         -50%
+                    );
+               }
+          </style>
+     </head>
+     <body>
+          <div class="ilk_tabaka">
+               <h1 style="opacity: 1">
+                    Bazı Resimler Gibi
+                    Sen
+               </h1>
+               <img
+                    class="logo"
+                    src="../../../Bazı_resimler/logo.png"
+                    alt=""
+               />
+
+               <div
+                    class="gradientli"
+               ></div>
+          </div>
+     </body>
+</html>

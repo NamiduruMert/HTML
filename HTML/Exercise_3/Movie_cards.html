@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+          <style>
+               * {
+                    margin: 0px;
+                    box-sizing: border-box;
+               }
+               .container {
+                    width: 1000px;
+                    background-color: rgb(255, 255, 255);
+                    margin: 20px auto;
+               }
+               .row {
+                    margin-bottom: 40px;
+               }
+               .row::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+               }
+               .colon-3 {
+                    background-color: rgb(255, 255, 255);
+                    width: 33.3%;
+                    float: left;
+                    padding: 15px;
+               }
+               .images_all {
+                    height: 380px;
+                    width: 100%;
+               }
+               .text_content {
+                    padding: 20px;
+               }
+               .card {
+                    box-shadow: 10px 10px 40px rgb(52 58 64 / 10%);
+                    cursor: pointer;
+                    transition: 0.5s;
+               }
+
+               .card:hover {
+                    box-shadow: 10px 10px 40px rgb(52 58 64 / 10%);
+                    cursor: pointer;
+                    transform: translateY(-10px);
+               }
+
+               .icerik_p {
+                    margin-top: 15px;
+               }
+               .button_stili_colon {
+                    background-color: #fc997c;
+                    border: 2px solid #fc997c;
+                    border-radius: 5px;
+                    padding: 8px 16px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #fff;
+                    transition: 0.6s;
+                    cursor: pointer;
+               }
+               .button_stili_colon:hover {
+                    background-color: #ffffff;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 8px 16px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #fc997c;
+                    border: 2px solid #fc997c;
+                    cursor: pointer;
+               }
+          </style>
+     </head>
+     <body>
+          <div class="container">
+               <div class="row">
+                    <div class="colon-3">
+                         <div class="card">
+                              <img
+                                   class="images_all"
+                                   src="../../../Bazı_resimler/poster-1.jpeg"
+                                   alt=""
+                              />
+                              <div class="text_content">
+                                   <h1>Star Wars</h1>
+                                   <p class="icerik_p">
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Nobis possimus ipsam
+                                        nostrum repudiandae dolor iste.
+                                   </p>
+                                   <p class="icerik_p">
+                                        <button class="button_stili_colon">
+                                             Details
+                                        </button>
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="colon-3">
+                         <div class="card">
+                              <img
+                                   class="images_all"
+                                   src="../../../Bazı_resimler/poster-2.jpeg"
+                                   alt=""
+                              />
+                              <div class="text_content">
+                                   <h1>The Brain</h1>
+                                   <p class="icerik_p">
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Nobis possimus ipsam
+                                        nostrum repudiandae dolor iste.
+                                   </p>
+                                   <p class="icerik_p">
+                                        <button class="button_stili_colon">
+                                             Details
+                                        </button>
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="colon-3">
+                         <div class="card">
+                              <img
+                                   class="images_all"
+                                   src="../../../Bazı_resimler/poster-3.jpeg"
+                                   alt=""
+                              />
+                              <div class="text_content">
+                                   <h1>The Mummy</h1>
+                                   <p class="icerik_p">
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Nobis possimus ipsam
+                                        nostrum repudiandae dolor iste.
+                                   </p>
+                                   <p class="icerik_p">
+                                        <button class="button_stili_colon">
+                                             Details
+                                        </button>
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </body>
+</html>

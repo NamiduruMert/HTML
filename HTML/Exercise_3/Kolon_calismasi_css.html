@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+          <style>
+               @media (min-width: 75s0px) and (max-width: 1000px) {
+                    h1,
+                    div,
+                    p {
+                         display: none;
+                    }
+                    body {
+                         background-color: aquamarine;
+                         height: 100vh;
+                    }
+                    #acilacak_yazi {
+                         color: rgb(111, 93, 93);
+                         text-align: center;
+                         display: block;
+                         font-size: 7rem;
+                    }
+               }
+
+               * {
+                    margin: 0px;
+                    box-sizing: border-box;
+               }
+
+               .clearfix::after {
+                    display: block;
+                    content: "";
+                    clear: both;
+               }
+               .cantainer {
+                    margin-top: 25px;
+                    padding: 25px;
+                    text-align: center;
+               }
+
+               .row {
+                    width: 1000px;
+                    text-align: center;
+                    background-color: aquamarine;
+                    margin: 55px auto;
+               }
+
+               .col_3 {
+                    height: 70vh;
+                    width: 33.3%;
+                    float: left;
+                    border: 2px solid red;
+               }
+               .img_sizing {
+                    width: 100%;
+                    height: 55%;
+               }
+               .col-h1-styling {
+                    color: rgb(56, 40, 95);
+                    text-align: center;
+                    font-size: 1.5rem;
+               }
+               .col-p-styling {
+                    color: rgb(255, 13, 13);
+                    text-align: center;
+                    font-size: 1em;
+                    padding: 20px;
+               }
+               .apsolute_deneme {
+                    position: absolute;
+                    top: 50px;
+                    left: 50%;
+                    text-align: center;
+                    transform: translate(-50%, -50%);
+               }
+               .acilacak_yazi_1 {
+                    display: none;
+               }
+          </style>
+     </head>
+     <body>
+          <h2 id="acilacak_yazi" class="acilacak_yazi_1">
+               PİXEL İNEN OYNAMA DAE
+          </h2>
+          <h1 class="apsolute_deneme" style="text-align: center">
+               KOLONLAR İÇİN DENEMELER
+          </h1>
+          <div class="cantainer">
+               <div class="row clearfix">
+                    <div class="col_3">
+                         <img
+                              class="img_sizing"
+                              src="../../../Bazı_resimler/iphone14.jpg"
+                              alt=""
+                         />
+                         <h1 class="col-h1-styling">Iphone 14</h1>
+                         <p class="col-p-styling">
+                              2017 yılında karşımıza çıkan iPhone X modeli ile
+                              birlikte çentikli bir tasarıma geçen iPhone
+                              ailesi, 5 yıldır benzer bir tasarım anlayışı ile
+                              birlikte yoluna devam ediyor. iPhone 13 ailesi ile
+                              birlikte ise çentiğin boyutunu küçülten Apple,
+                              iPhone 14 modellerinde farklı bir tasarıma geçiş
+                              yapacak.
+                         </p>
+                    </div>
+                    <div class="col_3">
+                         <img
+                              class="img_sizing"
+                              src="../../../Bazı_resimler/birinci_movie.jpeg"
+                              alt=""
+                         />
+                         <h1 class="col-h1-styling">Camera</h1>
+                         <p class="col-p-styling">
+                              Fotoğrafrak üretilmektedir. Ön yüzeyinde Kamera
+                              baskıları bulunmaktadır. Eşyalarınızı toparlayacak
+                              iki çekmecesi bulunmaktadır. Şifonyer eskitme renk
+                              tonlarına sahiptir. Şifonyer 20cm x 15.5cm x 9cm
+                              ebatlarına sahiptir. Ürün tarafınıza muhafazalı
+                              bir şekilde gönderilmektedir.
+                         </p>
+                    </div>
+
+                    <div class="col_3">
+                         <img
+                              class="img_sizing"
+                              src="../../../Bazı_resimler/tree.jpg"
+                              alt=""
+                         />
+                         <h1 class="col-h1-styling">Ağaçlar</h1>
+                         <p class="col-p-styling">
+                              Gövdesinden enine kesilen bir ağaç incelenecek
+                              olursa, en dışta kabuk, sonra yıllık halkaları
+                              meydana getiren hücre tabakaları ve en içte de öz
+                              kısım görülür.
+                         </p>
+                    </div>
+               </div>
+          </div>
+     </body>
+</html>

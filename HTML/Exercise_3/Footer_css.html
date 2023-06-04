@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          />
+          <title>Document</title>
+
+          <style>
+               * {
+                    margin: 0px;
+                    box-sizing: border-box;
+               }
+               .clearfix::after {
+                    display: block;
+                    content: "";
+                    clear: both;
+               }
+               .arka_plan_footer {
+                    background-color: rgb(255, 255, 255);
+               }
+
+               .container {
+                    width: 1000px;
+                    margin: 10px auto;
+                    background-color: aqua;
+               }
+               .row {
+                    margin-bottom: 25px;
+               }
+               .row::after {
+                    display: block;
+                    content: "";
+                    clear: both;
+               }
+               .colon_2 {
+                    width: 50%;
+                    height: 100px;
+                    float: left;
+               }
+               .footer_li {
+                    list-style-type: none;
+                    display: inline-block;
+               }
+               li a {
+                    text-decoration: none;
+                    color: #fff;
+               }
+               .fa {
+                    padding: 10px;
+                    font-size: 20px;
+                    width: 30px;
+                    text-align: center;
+                    text-decoration: none;
+                    margin: 5px 2px;
+                    border-radius: 50%;
+               }
+               .fa-youtube {
+                    background-color: red;
+               }
+          </style>
+     </head>
+     <body>
+          <div class="arka_plan_footer">
+               <div class="container">
+                    <div class="row">
+                         <div class="colon_2">
+                              <ul>
+                                   <li class="footer_li">
+                                        <a href="">About</a>
+                                   </li>
+                                   <li class="footer_li">
+                                        <a href="">Blog</a>
+                                   </li>
+                                   <li class="footer_li">
+                                        <a href="">Forum</a>
+                                   </li>
+                                   <li class="footer_li">
+                                        <a href="">Contact</a>
+                                   </li>
+                              </ul>
+                         </div>
+                         <div class="colon_2">
+                              <ul>
+                                   <li class="footer_li">
+                                        <a href="#" class="fa fa-facebook"></a>
+                                   </li>
+                                   <li class="footer_li">
+                                        <a href="#" class="fa fa-twitter"></a>
+                                   </li>
+                                   <li class="footer_li">
+                                        <a href="#" class="fa fa-youtube"></a>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </body>
+</html>
