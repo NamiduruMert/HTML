@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap"
+               rel="stylesheet"
+          />
+          <title>Document</title>
+          <style>
+               h1 {
+                    text-align: center;
+                    font-family: "Love Light", cursive;
+                    font-size: 3rem;
+               }
+               .images {
+                    display: flex;
+                    flex-wrap: wrap;
+               }
+               .item {
+                    flex-grow: 1;
+                    margin: 10px;
+                    overflow: hidden;
+               }
+
+               img {
+                    width: 100%;
+                    transition: transform 0.3s ease-out;
+                    height: 100%;
+               }
+
+               img:hover {
+                    transform: scale(1.2);
+               }
+          </style>
+     </head>
+     <body>
+          <h1>Image Gallery</h1>
+          <div class="images">
+               <div class="item">
+                    <img src="https://picsum.photos/200/300?random=1" />
+               </div>
+               <div class="item">
+                    <img src="https://picsum.photos/300/400?random=2" />
+               </div>
+               <div class="item">
+                    <img src="https://picsum.photos/500/300?random=3" />
+               </div>
+               <div class="item">
+                    <img src="https://picsum.photos/300/600?random=4" />
+               </div>
+               <div class="item">
+                    <img src="https://picsum.photos/200/300?random=5" />
+               </div>
+               <div class="item">
+                    <img src="https://picsum.photos/300/100?random=6" />
+               </div>
+               <div class="item">
+                    <img src="https://picsum.photos/400/200?random=7" />
+               </div>
+          </div>
+     </body>
+</html>

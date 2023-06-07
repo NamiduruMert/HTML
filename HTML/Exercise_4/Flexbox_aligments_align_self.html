@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+          <style>
+               .container {
+                    background-color: blueviolet;
+                    /* padding: 15px; */
+                    display: flex;
+                    height: 400px;
+                    margin-top: 20px;
+                    /* justify-content:center; */
+                    /* justify-content:space-evenly; */
+                    /* justify-content:space-between; */
+                    /* justify-content:space-around; */
+                    /* justify-content:flex-end; */
+                    /* justify-content:flex-start; */
+                    /* justify-content:center; */
+                    /* justify-content: flex-start; */
+                    flex-direction: row;
+
+                    /* align-items:stretch; */
+                    /* align-items:center; */
+                    /* align-items:flex-end; */
+                    /* align-items:flex-start; */
+                    /* align-items: flex-end; */
+               }
+
+               div[class*="it"] {
+                    background-color: brown;
+                    padding: 15px;
+                    /* margin: 15px; */
+                    margin: 10px;
+               }
+
+               .container1 {
+                    background-color: rgb(101, 83, 119);
+                    /* padding: 15px; */
+                    height: 400px;
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+               }
+               .item-1 {
+                    align-self: center;
+               }
+               .item-2 {
+                    align-self: flex-end;
+               }
+               .item-3 {
+                    align-self: flex-start;
+               }
+               .item1 {
+                    align-self: center;
+               }
+               .item2 {
+                    align-self: flex-end;
+               }
+               .item3 {
+                    align-self: flex-start;
+               }
+               .item4 {
+                    align-self: center;
+               }
+          </style>
+     </head>
+     <body>
+          <div class="container">
+               <div class="item-1">Item1</div>
+               <div class="item-2">Item2</div>
+               <div class="item-3">Item3</div>
+               <div class="item-4">Item4</div>
+          </div>
+
+          <div class="container1">
+               <div class="item1">Item1</div>
+               <div class="item2">Item2</div>
+               <div class="item3">Item3</div>
+               <div class="item4">Item4</div>
+          </div>
+     </body>
+</html>

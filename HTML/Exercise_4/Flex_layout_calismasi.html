@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap"
+               rel="stylesheet"
+          />
+          <title>Document</title>
+          <style>
+               * {
+                    margin: 0px;
+                    box-sizing: border-box;
+               }
+               .header-area {
+                    background-color: goldenrod;
+                    padding: 30px;
+                    text-align: center;
+                    font-family: "Love Light", cursive;
+                    font-size: 1.5rem;
+               }
+
+               a {
+                    text-decoration: none;
+                    color: #fff;
+                    display: block;
+                    padding: 16px 20px;
+               }
+               a:hover {
+                    background-color: rgb(159, 159, 150);
+               }
+               nav {
+                    background-color: #333;
+                    display: flex;
+               }
+               .yan_taraf {
+                    order: 1;
+               }
+               @media (max-width: 700px) {
+                    nav {
+                         flex-direction: column;
+                         text-align: center;
+                    }
+
+                    #biloklama {
+                         display: block;
+                    }
+               }
+
+               .gri_alan {
+                    width: 100%;
+                    background-color: #aaa;
+                    height: 200px;
+                    margin-top: 10px;
+               }
+
+               .komple_orta {
+                    display: flex;
+               }
+
+               .orta_bolum {
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    flex-basis: 75%;
+                    padding: 15px;
+               }
+
+               .yan_taraf {
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    flex-basis: 25%;
+                    padding: 15px;
+                    background-color: rgb(228, 225, 225);
+               }
+               p {
+                    margin: 10px 16px;
+               }
+               .yan_taraf .gri_alan {
+                    height: 50px;
+                    padding: 25px;
+                    margin-top: 25px;
+               }
+               .gri_alan_1 {
+                    width: 100%;
+                    background-color: #aaa;
+                    height: 200px;
+                    margin-top: 10px;
+               }
+               .footer {
+                    background-color: goldenrod;
+                    height: 75px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+               }
+          </style>
+     </head>
+     <body>
+          <div class="baslik">
+               <header class="header-area">
+                    <h1>Lorem, ipsum.</h1>
+                    <p>Lorem ipsum dolor sit.</p>
+               </header>
+               <nav>
+                    <a href="">Link1</a>
+                    <a href="">Link2</a>
+                    <a href="">Link3</a>
+                    <a href="">Link4</a>
+               </nav>
+          </div>
+          <div id="biloklama" class="komple_orta">
+               <div class="orta_bolum">
+                    <h2 class="h2-yazi">Lorem, ipsum.</h2>
+
+                    <div class="gri_alan"></div>
+
+                    <p>
+                         Lorem ipsum dolor sit amet consectetur adipisicing
+                         elit. Provident voluptatibus nemo aliquam tenetur
+                         tempora eius eligendi quia cumque perferendis qui
+                         obcaecati doloribus fugit, excepturi sapiente animi hic
+                         numquam et soluta facere, ab neque sequi. Corporis
+                         blanditiis placeat ab similique cum.
+                    </p>
+                    <h2 class="h2-yazi">Lorem, ipsum.</h2>
+
+                    <div class="gri_alan"></div>
+
+                    <p>
+                         Lorem ipsum dolor sit amet consectetur adipisicing
+                         elit. Provident voluptatibus nemo aliquam tenetur
+                         tempora eius eligendi quia cumque perferendis qui
+                         obcaecati doloribus fugit, excepturi sapiente animi hic
+                         numquam et soluta facere, ab neque sequi. Corporis
+                         blanditiis placeat ab similique cum.
+                    </p>
+                    <h2 class="h2-yazi">Lorem, ipsum.</h2>
+
+                    <div class="gri_alan"></div>
+
+                    <p>
+                         Lorem ipsum dolor sit amet consectetur adipisicing
+                         elit. Provident voluptatibus nemo aliquam tenetur
+                         tempora eius eligendi quia cumque perferendis qui
+                         obcaecati doloribus fugit, excepturi sapiente animi hic
+                         numquam et soluta facere, ab neque sequi. Corporis
+                         blanditiis placeat ab similique cum.
+                    </p>
+               </div>
+
+               <div class="yan_taraf">
+                    <h2>Lorem, ipsum.</h2>
+                    <div class="gri_alan_1"></div>
+                    <p>
+                         Lorem ipsum dolor sit amet consectetur adipisicing
+                         elit. Provident voluptatibus nemo aliquam tenetur
+                         tempora eius eligendi quia cumque perferendis qui
+                         obcaecati doloribus fugit, excepturi sapiente animi hic
+                         numquam et soluta facere, ab neque sequi. Corporis
+                         blanditiis placeat ab similique cum.
+                    </p>
+
+                    <div class="gri_alan"></div>
+                    <div class="gri_alan"></div>
+                    <div class="gri_alan"></div>
+               </div>
+          </div>
+
+          <div class="footer">
+               <h1 style="color: #fff; display: inline-block">
+                    Lorem, ipsum dolor.
+               </h1>
+          </div>
+     </body>
+</html>

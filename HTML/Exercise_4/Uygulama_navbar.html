@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          />
+          <title>Document</title>
+          <style>
+               * {
+                    margin: 0px;
+                    box-sizing: border-box;
+               }
+
+               nav ul {
+                    list-style: none;
+                    display: flex;
+               }
+
+               a {
+                    text-decoration: none;
+                    align-self: center;
+                    padding: 10px;
+                    display: block;
+                    color: #fff;
+               }
+               ul a:hover {
+                    background-color: #f2dca6;
+               }
+
+               nav {
+                    background-color: goldenrod;
+                    display: flex;
+                    justify-content: space-between;
+               }
+
+               ul li:last-child {
+                    display: none;
+               }
+
+               @media (max-width: 600px) {
+                    nav {
+                         flex-direction: column;
+                         position: relative;
+                    }
+                    li {
+                         text-align: center;
+                    }
+                    ul {
+                         flex-direction: column;
+                         padding: 10px 25px;
+                    }
+                    ul li {
+                         text-align: center;
+                    }
+                    ul li:not(:last-child) {
+                         padding: 10px;
+                         text-align: center;
+                         border-top: 1px solid rgba(255, 255, 255, 0.3);
+                         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+                    .logo_1 {
+                         align-self: flex-start;
+                    }
+                    ul li:last-child {
+                         display: block;
+                         position: absolute;
+                         top: 0px;
+                         right: 10px;
+                    }
+                    ul li:not(:last-child) {
+                         display: none;
+                         position: absolute;
+                         top: 0px;
+                         right: 10px;
+                    }
+               }
+          </style>
+     </head>
+     <body>
+          <nav>
+               <a class="logo_1" href="">Logo</a>
+
+               <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li>
+                         <a href=""><i class="fa fa-bars"></i></a>
+                    </li>
+               </ul>
+          </nav>
+     </body>
+</html>
