@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+          <style>
+               .container {
+                    background-color: bisque;
+                    display: grid;
+                    grid-template-columns: repeat(3, 20%);
+                    grid-auto-rows: repeat(2, 20%);
+
+                    gap: 20px;
+                    height: 600px;
+
+                    /* ALIGN KISMI */
+
+                    /* align-items: stretch; */
+                    /* align-items: center; */
+                    /* align-items: start; */
+                    /* align-items: end; */
+
+                    /* JUSTIFY KISMI */
+
+                    /* justify-items: stretch; */
+                    /* justify-items: center; */
+                    /* justify-items: end; */
+                    /* justify-items: start; */
+
+                    /* ALIG_CONTENT KISMI */
+
+                    /* align-content: center; */
+                    /* align-content: start; */
+                    /* align-content: end; */
+                    align-content: center;
+
+                    /* JUSTIFY_CONTENT KISMI */
+
+                    /* justify-content: center; */
+                    /* justify-content: end; */
+                    /* justify-content: start; */
+                    justify-content: center;
+               }
+               .item {
+                    padding: 20px;
+                    background-color: aqua;
+               }
+
+               .item:first-child {
+                    /* align-self: center;
+                justify-self: center; */
+
+                    align-self: end;
+                    justify-self: start;
+               }
+          </style>
+     </head>
+     <body>
+          <div class="container">
+               <div class="item">Box1</div>
+               <div class="item">Box2</div>
+               <div class="item">Box3</div>
+               <div class="item">Box4</div>
+               <div class="item">Box5</div>
+               <div class="item">Box6</div>
+          </div>
+     </body>
+</html>

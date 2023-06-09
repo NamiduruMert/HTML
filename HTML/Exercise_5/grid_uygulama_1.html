@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+          <style>
+               .container {
+                    display: grid;
+                    /* grid-template-columns: repeat(3, 1fr); */
+                    gap: 10px;
+                    grid-template-areas:
+                         "header header header"
+                         "sidebar content content"
+                         "sidebar box2 box3"
+                         "box1 box1 box1"
+                         "footer footer footer";
+               }
+               header {
+                    grid-area: header;
+                    font-weight: 800;
+                    background-color: red;
+               }
+               .content {
+                    grid-area: content;
+                    background-color: yellow;
+               }
+
+               .box-1 {
+                    grid-area: box1;
+                    background-color: pink;
+               }
+               .box-2 {
+                    grid-area: box2;
+               }
+
+               .box-3 {
+                    grid-area: box3;
+               }
+
+               .footer {
+                    grid-area: footer;
+                    background-color: turquoise;
+               }
+
+               .sidebar {
+                    grid-area: sidebar;
+                    background-color: blue;
+               }
+               @media (max-width: 768px) {
+                    .container {
+                         display: grid;
+                         grid-template-columns: repeat(1, 1fr);
+                         grid-template-areas:
+                              "header"
+                              "sidebar"
+                              "content"
+                              "box1"
+                              "box2"
+                              "box3"
+                              "footer";
+                    }
+               }
+          </style>
+     </head>
+     <body>
+          <div class="container">
+               <header><h1>Page Header</h1></header>
+               <div class="content">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>
+                         Lorem, ipsum dolor sit amet consectetur adipisicing
+                         elit. Veritatis quos placeat quis? Similique, quis.
+                         Quia ratione optio similique sapiente modi possimus
+                         distinctio tempora vel aut iure! Accusamus cum est
+                         fugit?
+                    </p>
+               </div>
+               <section class="sidebar">
+                    <h2>Lorem, ipsum.</h2>
+                    <ul>
+                         <li>lorem2</li>
+                    </ul>
+                    <ul>
+                         <li>lorem2</li>
+                    </ul>
+                    <ul>
+                         <li>lorem2</li>
+                    </ul>
+                    <ul>
+                         <li>lorem2</li>
+                    </ul>
+               </section>
+               <div class="box-1">
+                    <h3>BOX1</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Culpa repudiandae excepturi rerum velit ullam. Excepturi
+                    fugiat officia illo qui exercitationem laudantium at ipsum
+                    aut asperiores distinctio, provident facilis ratione fuga!
+               </div>
+               <div class="box-2">
+                    <h3>BOX2</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Culpa repudiandae excepturi rerum velit ullam. Excepturi
+                    fugiat officia illo qui exercitationem laudantium at ipsum
+                    aut asperiores distinctio, provident facilis ratione fuga!
+               </div>
+               <div class="box-3">
+                    <h3>BOX3</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Culpa repudiandae excepturi rerum velit ullam. Excepturi
+                    fugiat officia illo qui exercitationem laudantium at ipsum
+                    aut asperiores distinctio, provident facilis ratione fuga!
+               </div>
+
+               <section class="footer">
+                    <p>Lorem ipsum dolor sit amet.</p>
+               </section>
+          </div>
+     </body>
+</html>
