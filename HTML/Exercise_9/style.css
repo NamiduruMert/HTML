@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+a {
+    text-align: center;
+    size: 16x;
+    color: brown;
+}
+
+li {
+    text-decoration: line-through;
+    background-color: #ebe645;
+    list-style-type: none;
+}
